@@ -1,0 +1,52 @@
+body {
+	font-family: Roboto;
+}
+h2 {
+	font-weight: bold;
+}
+.left {
+	background: url("../images/adrien-olichon-G57hY5cjCzo-unsplash.jpg") rgba(20, 83, 116, 0.7);
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+}
+.left-color {
+	background-color: rgba(20, 83, 116, 0.7);
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.right {
+	color: red;
+	text-align: center;
+	height: 100vh;
+}
+.iflab-logo {
+	position: absolute;
+	right: 2rem;
+	top: 2rem;
+}
+.login-content {
+	position: absolute;
+	left: 20%;
+	right: 20%;
+	top: 30%;
+}
+.form-control {
+	margin-top: 2rem;
+	text-align: center;
+	border-radius: 0;
+	border: 0;
+	border-bottom: 1px solid;
+}
+#forgot-password {
+	float: right;
+	color: darkgrey;
+	font-size: 10pt;
+}
+.btn {
+	width: 50%;
+	margin: auto;
+}
