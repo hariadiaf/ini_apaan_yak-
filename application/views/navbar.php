@@ -41,7 +41,7 @@
 						<a class="dropdown-item" href="<?php echo site_url('Profile/index');?>">
 							Update Profile
 						</a>
-						<a class="dropdown-item" href="<?php echo site_url('Home/logout');?>">
+						<a class="dropdown-item" href="<?php echo site_url('Loginscreen/logout');?>">
 							Logout
 						</a>
 					</div>

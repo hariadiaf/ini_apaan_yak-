@@ -31,4 +31,7 @@ $this->load->view('header');
 		</div>
 <?php
 $this->load->view('footer');
+if($this->session->flashdata('message') == 'login_failed') {
+	echo "<script>alert('Username/password is incorrect.');</script>";
+}
 ?>

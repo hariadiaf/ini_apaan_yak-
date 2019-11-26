@@ -14,7 +14,12 @@ class Dashboard extends CI_Controller
 			'title' => 'Dasbor',
 			'filename' => 'dashboard'
 		);
-		$this->load->view('dashboard',$data);
+		if ($this->session->has_userdata('logged_user')) {
+			$this->load->view('dashboard',$data);
+		} else {
+			redirect('Loginscreen/index');
+		}
+		
 	}
 }
 
