@@ -13,28 +13,28 @@
 		<!--Logged In-->
 		<div class="collapse navbar-collapse" id="navbar-contents">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item my-auto <?php if ($filename == 'dashboard') {echo 'active';} ?>">
-					<a href="<?php echo site_url('Wishlist/index');?>">
+				<li class="nav-item my-auto<?php if ($filename == 'dashboard') {echo ' active';} ?>">
+					<a href="<?php echo site_url('Dashboard/index');?>">
 						Dasbor
 					</a>
 				</li>
-				<li class="nav-item my-auto <?php if ($filename == 'mulai_praktikum') {echo 'active';} ?>">
-					<a href="<?php echo site_url('Cart/index');?>">
+				<li class="nav-item my-auto<?php if ($filename == 'mulai_praktikum') {echo ' active';} ?>">
+					<a href="<?php echo site_url('Mulai_praktikum/index');?>">
 						Mulai Praktikum
 					</a>
 				</li>
-				<li class="nav-item my-auto">
-					<a href="<?php echo site_url('Cart/index');?>">
+				<li class="nav-item my-auto<?php if ($filename == 'upload_jawaban') {echo ' active';} ?>">
+					<a href="<?php echo site_url('Upload_jawaban/index');?>">
 						Upload Jawaban
 					</a>
 				</li>
-				<li class="nav-item my-auto">
-					<a href="<?php echo site_url('Cart/index');?>">
+				<li class="nav-item my-auto<?php if ($filename == 'nilai') {echo ' active';} ?>">
+					<a href="<?php echo site_url('Nilai/index');?>">
 						Nilai
 					</a>
 				</li>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+					<a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
 						Akun
 					</a>
 					<div class="dropdown-menu dropdown-menu-right">

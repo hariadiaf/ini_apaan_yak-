@@ -16,7 +16,7 @@ body {
 	padding: 1rem 1.2rem 1.2rem 1.2rem;
 }
 .mulai-praktikum {
-	height: 60vh; /*temp*/
+	height: 65vh; /*temp*/
 }
 .info-box {
 	height: 25vh;
@@ -41,10 +41,30 @@ body {
 form {
 	padding-top: 1.5rem;
 }
+.form-group {
+	margin-bottom: 1.2rem;
+}
 .form-group label {
-	/*position: absolute;*/
+	padding-top: .4rem;
+	margin-bottom: 0;
 }
 .form-group .form-control {
 	width: 70%;
 	float: right;
+}
+button.btn {
+	margin-top: 2.5rem;
+	background: #E8E8E8;
+	border: 2px solid #145374;
+	box-sizing: border-box;
+	border-radius: 32px;
+	font-weight: bold;
+	color: #145374;
+	width: 50%;
+	transition: 0.1 ease;
+}
+button.btn:hover {
+	background: #145374;
+	color: white;
+	transition: 0.1 ease;
 }

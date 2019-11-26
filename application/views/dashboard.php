@@ -11,7 +11,7 @@ $this->load->view('header');
 					<div class="card form-box mulai-praktikum">
 						<b class="box-title">Form Mulai Praktikum</b>
 						<?php 
-				        echo form_open("Loginscreen/validate_data");
+				        echo form_open("Dashboard/start_practice");
 				        ?>
 		  					<div class="form-group">
 		    					<label>Praktikum</label>
@@ -28,7 +28,7 @@ $this->load->view('header');
 		    				<div class="form-group">
 		    					<label>Asprak</label>
 		    					<select class="form-control" id="asprak-name" name="asprak">
-		    						<option value="" disabled selected value>Pilih asprak</option>
+		    						<option value="" disabled selected value></option>
 		    						<option value="a">ADMIRAL (ADM)</option>
 		    						<option value="b">BADAK JAWA (BDJ)</option>
 		    					</select>
@@ -38,7 +38,7 @@ $this->load->view('header');
 		    					<input type="text" class="form-control" id="auth-code" name="auth">
 		  					</div>
 		  					<div class="text-center">
-		  						<button type="submit" class="btn btn-block">Mulai</button>
+		  						<button type="submit" class="btn btn-block mx-auto">Mulai</button>
 		  					</div>
 						</form>
 					</div>

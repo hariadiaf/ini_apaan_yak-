@@ -22,13 +22,21 @@ $this->load->view('header');
 		    					<input type="text" class="form-control" id="class-name" name="kelas">
 		    				</div>
 		    				<div class="form-group">
-		    					<label>Jadwal</label>
-		    					<input type="text" class="form-control" id="jadwal-date" name="jadwal">
+		    					<label>Modul</label>
+		    					<select class="form-control" id="module-no" name="modul">
+		    						<option value="" disabled selected value></option>
+		    						<option value="0">Running Modul</option>
+		    						<?php
+		    						for ($x = 1; $x <= 10; $x++) {
+		    							echo '<option value="'.$x.'">Modul '.$x.'</option>';
+		    						}
+		    						?>
+		    					</select>
 		    				</div>
 		    				<div class="form-group">
 		    					<label>Asprak</label>
 		    					<select class="form-control" id="asprak-name" name="asprak">
-		    						<option value="" disabled selected value>Pilih asprak</option>
+		    						<option value="" disabled selected value></option>
 		    						<option value="a">ADMIRAL (ADM)</option>
 		    						<option value="b">BADAK JAWA (BDJ)</option>
 		    					</select>
@@ -46,15 +54,15 @@ $this->load->view('header');
 				<div class="col-4 box">
 					<div class="card info-box container-fluid">
 						<b class="box-title">Informasi, Tata Cara Praktikum</b>
-						<div class="row">
+						<div class="row info-num">
 							<h5 class="number-circle">1</h5>
 							Lengkapi Form<br>Mulai Praktikum
 						</div>
-						<div class="row">
+						<div class="row info-num">
 							<h5 class="number-circle">2</h5>
 							Kerjakan Soal Jurnal
 						</div>
-						<div class="row">
+						<div class="row info-num">
 							<h5 class="number-circle">3</h5>
 							Upload Jawaban
 						</div>

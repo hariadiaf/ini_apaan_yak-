@@ -13,7 +13,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--Favicon-->
-	<!-- <link rel="icon" type="image" href="<?php //echo base_url(); ?>assets/images/favicon.png"> -->
+	<link rel="icon" type="image" href="<?php echo base_url(); ?>assets/images/favicon.png">
 	<!--Bootstrap's CSS Embedding-->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/vendor/bootstrap/css/bootstrap.min.css">
 	<!--Font Embedding-->

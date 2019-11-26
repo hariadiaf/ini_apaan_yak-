@@ -12,7 +12,15 @@ li.active a {
 a {
 	color: white;
 	opacity: 60%;
+	transition: opacity 0.1s ease-in-out;
+}
+a:hover {
+	color: white;
+	text-decoration: none;
+	opacity: 90%;
+	transition: opacity 0.1s ease-in-out;
 }
 h2 {
 	font-weight: bold;
+	margin-bottom: 0;
 }
