@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/impulse_imk/';
+$config['base_url'] = 'http://localhost/ini_apaan_yak/';
 
 /*
 |--------------------------------------------------------------------------
