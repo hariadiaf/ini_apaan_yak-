@@ -17,18 +17,29 @@ $this->load->view('header');
 		  					<div class="form-group">
 		    					<input type="text" class="form-control" placeholder="Username" id="username-user" name="username">
 		  					</div>
-		  					<div class="form-group">
+		  					<div class="form-group pw">
 		    					<input type="password" class="form-control" placeholder="Password" id="password-user" name="password">
+		    					<input type="checkbox" onclick="toggleVisible()" id="toggle"/>
 		  					</div>
 		  					<a href="#" id="forgot-password">Lupa Password?</a>
 		  					<div class="text-center">
-		  						<button type="submit" class="btn btn-block">Masuk</button>
+		  						<button type="submit" class="btn btn-block mx-auto">Masuk</button>
 		  					</div>
 						</form>
 					</div>
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript">
+			function toggleVisible () {
+				var x = document.getElementById("password-user");
+				if (x.type === "password") {
+			    	x.type = "text";
+				} else {
+			    	x.type = "password";
+				}
+			}
+		</script>
 <?php
 $this->load->view('footer');
 if($this->session->flashdata('message') == 'login_failed') {

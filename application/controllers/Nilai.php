@@ -14,7 +14,11 @@ class Nilai extends CI_Controller
 			'title' => 'Nilai',
 			'filename' => 'nilai'
 		);
-		$this->load->view('nilai',$data);
+		if ($this->session->has_userdata('logged_user')) {
+			$this->load->view('nilai',$data);
+		} else {
+			redirect('Loginscreen/index');
+		}
 	}
 }
 

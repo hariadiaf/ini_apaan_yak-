@@ -41,7 +41,7 @@
 						<a class="dropdown-item" href="<?php echo site_url('Profile/index');?>">
 							Update Profile
 						</a>
-						<a class="dropdown-item" href="<?php echo site_url('Loginscreen/logout');?>">
+						<a class="dropdown-item" href="javascript:;" data-toggle="modal" data-target="#logout">
 							Logout
 						</a>
 					</div>
@@ -50,3 +50,16 @@
 		</div>	
 	</div>
 </nav>
+<div id="logout" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        	<?php echo form_open('Loginscreen/logout'); ?>
+            <b>Yakin mau keluar?</b>
+            <div class="modal-footer">
+            	<button type="submit" class="btn btn-danger">Ya</button>
+                <button type="button" data-dismiss="modal" class="btn btn-primary">Batal</button>
+            </div>
+            <?php echo form_close(); ?>
+        </div>
+    </div>
+</div>

@@ -11,7 +11,7 @@ $this->load->view('header');
 					<div class="card form-box mulai-praktikum container-fluid">
 						<b class="box-title">Form Upload Jawaban</b>
 						<?php 
-				        echo form_open("Loginscreen/validate_data");
+				        echo form_open("Upload_jawaban/check_upload");
 				        ?>
 						<div class="row">
 							<div class="col-6">

@@ -1,0 +1,107 @@
+body {
+	font-family: Roboto;
+}
+.col-8.box {
+	padding: 15vh 2rem 2rem 1rem;
+}
+.col-4.box {
+	padding: 15vh 1rem 2rem 2rem;
+}
+.card {
+	background: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 16px;
+	padding: 1.5rem 2.5rem 1.2rem 2rem;
+}
+.timer {
+	height: 50vh; /*temp*/
+	text-align: center;
+}
+#countdown {
+	font-weight: bold;
+	font-size: 48pt;
+	display: inline-block;
+	border: 3px solid #888888;
+	border-radius: 8px;
+	margin-bottom: 1rem;
+	color: #145374;
+}
+.subtitle {
+	position: relative;
+	text-align: left;
+	display: inline-block;
+	padding-bottom: 1rem;
+	border-bottom: 2px solid #888888;
+}
+a[download] {
+	color: #145374;
+}
+a[download]:hover {
+	color: #145374;
+	text-decoration: underline;
+}
+.soal-box {
+	height: 77vh;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+.soal-input {
+	text-align: left;
+	margin-top: 1rem;
+}
+.soal {
+	margin: 1rem;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #888888;
+	box-sizing: border-box;
+	border-radius: 16px;
+}
+.box-title {
+	text-align: left;
+	color: #145374;
+	margin-bottom: .5rem;
+}
+.box-title.unselected {
+	opacity: 60%;
+	font-weight: normal;
+}
+.number-circle {
+	background-color: #56B48C;
+	padding: .5rem;
+	margin: .5rem 44.5% 1rem 44.5%;
+	border-radius: 100px;
+	color: white;
+	font-weight: bold;
+}
+form {
+	padding-top: 1.5rem;
+}
+.form-group label {
+	padding-top: .4rem;
+	margin-bottom: 0;
+	color: #145374;
+}
+.form-group .form-control {
+	width: 70%;
+	float: right;
+}
+button.btn {
+	margin-top: 2.5rem;
+	background: #E8E8E8;
+	border: 2px solid #145374;
+	box-sizing: border-box;
+	border-radius: 32px;
+	font-weight: bold;
+	color: #145374;
+	width: 30%;
+	float: right;
+	transition: 0.1 ease;
+}
+button.btn:hover {
+	background: #145374;
+	color: white;
+	transition: 0.1 ease;
+}

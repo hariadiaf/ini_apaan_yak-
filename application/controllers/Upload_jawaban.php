@@ -14,10 +14,19 @@ class Upload_jawaban extends CI_Controller
 			'title' => 'Upload Jawaban',
 			'filename' => 'upload_jawaban'
 		);
-		$this->load->view('upload_jawaban',$data);
+		if ($this->session->has_userdata('logged_user')) {
+			$this->load->view('upload_jawaban',$data);
+		} else {
+			redirect('Loginscreen/index');
+		}
 	}
 
-	// $this->session->set_flashdata('message','upload_success');
+	public function check_upload()
+	{
+		$this->session->set_flashdata('message','upload_success');
+		redirect('Upload_jawaban/index');
+	}
+	
 }
 
 

@@ -3,6 +3,7 @@ body {
 }
 h2 {
 	font-weight: bold;
+	font-size: 30pt;
 }
 .left {
 	background: url("../images/adrien-olichon-G57hY5cjCzo-unsplash.jpg") rgba(20, 83, 116, 0.7);
@@ -39,14 +40,37 @@ h2 {
 	text-align: center;
 	border-radius: 0;
 	border: 0;
-	border-bottom: 1px solid;
+	border-bottom: 1px solid #00334E;
 }
-#forgot-password {
+/*.pw {
+	display: inline-block;
+}*/
+input[type="checkbox"]:after {
+	background: url("../images/visible.png");
+	width: 25px;
+}
+input[type="checkbox"]:checked:after {
+	background: url("../images/invisible.png");
+	width: 25px;
+}
+a#forgot-password {
 	float: right;
-	color: darkgrey;
+	color: black;
 	font-size: 10pt;
 }
-.btn {
+button.btn {
+	margin-top: 3rem;
+	background: #E8E8E8;
+	border: 2px solid #145374;
+	box-sizing: border-box;
+	border-radius: 32px;
+	font-weight: bold;
+	color: #145374;
 	width: 50%;
-	margin: auto;
+	transition: 0.1 ease;
+}
+button.btn:hover {
+	background: #145374;
+	color: white;
+	transition: 0.1 ease;
 }

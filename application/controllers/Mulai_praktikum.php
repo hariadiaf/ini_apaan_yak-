@@ -14,7 +14,20 @@ class Mulai_praktikum extends CI_Controller
 			'title' => 'Mulai Praktikum',
 			'filename' => 'mulai_praktikum'
 		);
-		$this->load->view('mulai_praktikum',$data);
+		if ($this->session->has_userdata('logged_user')) {
+			$this->load->view('mulai_praktikum',$data);
+		} else {
+			redirect('Loginscreen/index');
+		}
+	}
+
+	public function mulai()
+	{
+		$data = array(
+			'title' => 'Mulai Praktikum',
+			'filename' => 'praktikum'
+		);
+		$this->load->view('praktikum',$data);
 	}
 }
 

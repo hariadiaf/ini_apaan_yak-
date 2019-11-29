@@ -11,7 +11,7 @@ $this->load->view('header');
 					<div class="card form-box mulai-praktikum">
 						<b class="box-title">Form Mulai Praktikum</b>
 						<?php 
-				        echo form_open("Loginscreen/validate_data");
+				        echo form_open("Mulai_praktikum/mulai");
 				        ?>
 		  					<div class="form-group">
 		    					<label>Praktikum</label>
