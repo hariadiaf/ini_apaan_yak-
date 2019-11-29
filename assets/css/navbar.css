@@ -47,19 +47,25 @@ h2 {
 .modal-dialog {
 	margin: 0 auto;
 	top: 30%;
+	width: 25%;
 }
 .modal-content {
 	text-align: center;
 	width: 80%;
 	margin: auto;
 }
+.modal-content b {
+	display: flex;
+	justify-content: center;
+	margin: 1.5rem 0 .5rem 0;
+}
 .modal-footer {
 	border: none;
 	justify-content: center;
 }
 .modal-footer button.btn {
-	margin-top: 0;
-	width: 30%;
+	margin: 0 .1rem 0 .1rem;
+	width: 50%;
 	border-radius: 8px;
 	border: none;
 	color: white;
@@ -67,6 +73,12 @@ h2 {
 .modal-footer button.btn[type="submit"] {
 	background: #B70E0E;
 }
+.modal-footer button.btn[type="submit"]:hover {
+	background: maroon;
+}
 .modal-footer button.btn[type="button"] {
 	background: rgba(136, 136, 136, 0.8);
+}
+.modal-footer button.btn[type="button"]:hover {
+	background: rgba(136, 136, 136, 1);
 }

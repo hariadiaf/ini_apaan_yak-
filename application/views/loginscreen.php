@@ -20,6 +20,7 @@ $this->load->view('header');
 		  					<div class="form-group pw">
 		    					<input type="password" class="form-control" placeholder="Password" id="password-user" name="password">
 		    					<input type="checkbox" onclick="toggleVisible()" id="toggle"/>
+		    					<label for="toggle"></label>
 		  					</div>
 		  					<a href="#" id="forgot-password">Lupa Password?</a>
 		  					<div class="text-center">

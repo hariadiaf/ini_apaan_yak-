@@ -80,7 +80,7 @@ $this->load->view('header');
 			    					<input type="password" class="form-control" id="pw-new" name="new-pw" required>
 			    				</div>
 			    				<div class="form-group pw">
-			    					<label>KONFIRMASI<br>PASSWORD BARU</label>
+			    					<label class="twoline">KONFIRMASI<br>PASSWORD BARU</label>
 			    					<input type="password" class="form-control" id="pw-conf" required>
 			    				</div>
 			  					<div class="text-center">

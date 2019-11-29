@@ -17,17 +17,17 @@ $this->load->view('header');
 							<div class="col-6">
 								<div class="form-group">
 			    					<label>Praktikum</label>
-			    					<input type="text" class="form-control" id="praktikum-name" name="praktikum">
+			    					<input type="text" class="form-control" id="praktikum-name" name="praktikum" value="Jaringan Komputer">
 			    				</div>
 			    				<div class="form-group">
 			    					<label>Kelas</label>
-			    					<input type="text" class="form-control" id="class-name" name="kelas">
+			    					<input type="text" class="form-control" id="class-name" name="kelas" value="IF 41-10">
 			    				</div>
 			    				<div class="form-group">
 			    					<label>Modul</label>
 			    					<select class="form-control" id="module-no" name="modul">
-			    						<option value="" disabled selected value></option>
-			    						<option value="0">Running Modul</option>
+			    						<option value="" disabled value></option>
+			    						<option value="0" selected>Running Modul</option>
 			    						<?php
 			    						for ($x = 1; $x <= 10; $x++) {
 			    							echo '<option value="'.$x.'">Modul '.$x.'</option>';
@@ -38,8 +38,8 @@ $this->load->view('header');
 			    				<div class="form-group">
 			    					<label>Asprak</label>
 			    					<select class="form-control" id="asprak-name" name="asprak">
-			    						<option value="" disabled selected value></option>
-			    						<option value="a">ADMIRAL (ADM)</option>
+			    						<option value="" disabled value></option>
+			    						<option value="a" selected>ADMIRAL (ADM)</option>
 			    						<option value="b">BADAK JAWA (BDJ)</option>
 			    					</select>
 			    				</div>
@@ -61,9 +61,9 @@ $this->load->view('header');
 								<div class="form-group">
 			    					<label>Bagian</label>
 			    					<select class="form-control" id="asprak-name" name="asprak">
-			    						<option value="" disabled selected value></option>
+			    						<option value="" disabled value></option>
 			    						<option value="ta">Tes Awal</option>
-			    						<option value="j">Jurnal</option>
+			    						<option value="j" selected>Jurnal</option>
 			    						<option value="tk">Tes Akhir</option>
 			    					</select>
 			    				</div>

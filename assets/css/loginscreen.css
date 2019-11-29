@@ -42,16 +42,29 @@ h2 {
 	border: 0;
 	border-bottom: 1px solid #00334E;
 }
-/*.pw {
-	display: inline-block;
-}*/
-input[type="checkbox"]:after {
-	background: url("../images/visible.png");
-	width: 25px;
+input[type="checkbox"] {
+	display: none;
 }
-input[type="checkbox"]:checked:after {
-	background: url("../images/invisible.png");
-	width: 25px;
+input[type="checkbox"] + label {
+	position: absolute;
+	margin-top: -2rem;
+	margin-left: 42%;
+}
+input[type="checkbox"] + label {
+	background: url("../images/visible.png") no-repeat;
+	display:inline-block;
+    padding: 0 0 0 0px;
+    height: 1.7rem;
+    width: 1.7rem;
+    background-size: 100%;
+}
+input[type="checkbox"]:checked + label {
+	background: url("../images/invisible.png") no-repeat;
+	display:inline-block;
+    padding: 0 0 0 0px;
+    height: 1.7rem;
+    width: 1.7rem;
+    background-size: 100%;
 }
 a#forgot-password {
 	float: right;

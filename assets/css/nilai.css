@@ -13,14 +13,33 @@ body {
 	padding: 1.5rem 1.5rem 1.5rem 1.5rem;
 }
 .nilai-main {
-	height: 50vh;
+	height: 60vh;
 	margin-bottom: 1.2rem;
 }
 .nilai-main .box-title {
 	text-align: center;
 }
-.nilai-detail {
-	height: 29vh;
+.nilai-charts {
+	display: flex;
+	margin: auto;
+	width: 90%;
+	height: 80%;
+	border-bottom: 2px solid #145374;
+}
+table {
+	margin-top: 1rem;
+	text-align: center;
+	border-collapse: collapse;
+  	border-style: hidden;
+}
+th {
+	font-weight: normal;
+	color: #145374;
+	border: 1px solid;
+}
+td {
+	height: 50vh;
+	border: 1px solid;
 }
 .box-title {
 	text-align: left;

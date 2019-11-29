@@ -15,21 +15,21 @@ $this->load->view('header');
 				        ?>
 		  					<div class="form-group">
 		    					<label>Praktikum</label>
-		    					<input type="text" class="form-control" id="praktikum-name" name="praktikum">
+		    					<input type="text" class="form-control" id="praktikum-name" name="praktikum" value="Jaringan Komputer">
 		    				</div>
 		    				<div class="form-group">
 		    					<label>Kelas</label>
-		    					<input type="text" class="form-control" id="class-name" name="kelas">
+		    					<input type="text" class="form-control" id="class-name" name="kelas" value="IF 41-10">
 		    				</div>
 		    				<div class="form-group">
 		    					<label>Jadwal</label>
-		    					<input type="text" class="form-control" id="jadwal-date" name="jadwal">
+		    					<input type="text" class="form-control" id="jadwal-date" name="jadwal" value="Jumat, 8.30 WIB">
 		    				</div>
 		    				<div class="form-group">
 		    					<label>Asprak</label>
 		    					<select class="form-control" id="asprak-name" name="asprak">
-		    						<option value="" disabled selected value></option>
-		    						<option value="a">ADMIRAL (ADM)</option>
+		    						<option value="" disabled value></option>
+		    						<option value="a" selected>ADMIRAL (ADM)</option>
 		    						<option value="b">BADAK JAWA (BDJ)</option>
 		    					</select>
 		    				</div>
@@ -42,6 +42,7 @@ $this->load->view('header');
 		  					</div>
 						</form>
 					</div>
+					<b class="praktikum">Anda belum memulai praktikum</b>
 				</div>
 				<div class="col-8 box">
 					<div class="card info-box container-fluid">
@@ -53,16 +54,17 @@ $this->load->view('header');
 							</div>
 							<div class="col-4">
 								<h5 class="number-circle">2</h5>
-								Kerjakan Soal Jurnal
+								<label>Kerjakan Soal Jurnal</label>
 							</div>
 							<div class="col-4">
 								<h5 class="number-circle">3</h5>
-								Upload Jawaban
+								<label>Upload Jawaban</label>
 							</div>
 						</div>
 					</div>
 					<div class="card nilai-box">
 						<b class="box-title">Nilai</b>
+						<div class="nilai-charts"></div>
 					</div>
 				</div>
 			</div>
